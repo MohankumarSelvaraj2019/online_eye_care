@@ -1,0 +1,142 @@
+.youtube_player {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #dbdbdb;
+}
+
+.yt_iframe {
+    margin: 0 auto;
+}
+
+.tac_iframe {
+    margin: 0 auto;
+}
+
+.yt_iframe .tac_float,
+.tac_iframe .tac_float {
+    padding: 10%;
+}
+
+.cookieBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #dbdbdb;
+    z-index: 10;
+    box-shadow: 0px -1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 992px) {
+    .cookieBar {
+        left: 104px;
+    }
+}
+
+.cookieBar_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+@media (min-width: 720px) {
+    .cookieBar_wrapper {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 10px;
+    }
+}
+
+@media (min-width: 960px) {
+    .cookieBar_wrapper {
+        padding: 30px;
+    }
+}
+
+.cookieBar_content,
+.cookieBar_content * {
+    flex-grow: 1;
+    line-height: 1.2;
+    font-family: gotham_htfbook, Arial, Helvetica, sans-serif !important;
+    font-size: 1.2em;
+    color: black !important;
+}
+
+@media (min-width: 720px) {
+    .cookieBar_content {
+        font-size: 1.4em;
+    }
+}
+
+.cookieBar_wrapper a {
+    color: #f8614f !important;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.cookieBar_options {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.cookieBar span {
+    display: inline-block;
+    padding: 10px;
+    border: 3px solid #f8614f;
+    line-height: 1.3571;
+    font-family: gotham_htfbook, Arial, Helvetica, sans-serif !important;
+    font-size: 1.2em;
+    color: #f8614f !important;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease-out 200ms;
+    margin: 5px;
+    white-space: nowrap;
+    flex-shrink: 0;
+    text-align: center;
+    position: relative;
+    transition: color 400ms;
+}
+
+.cookieBar span:before {
+    content: " ";
+    background-color: #f8614f;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 0%;
+    z-index: -1;
+    transition: width 400ms;
+}
+
+.cookieBar span:hover:before {
+    width: 100%;
+}
+
+.cookieBar span:hover {
+    color: white !important;
+}
+
+@media (min-width: 720px) {
+    .cookieBar_close {
+        font-size: 1.4em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .cookieBar_close:hover {
+        background: #f8614f;
+        color: white !important;
+    }
+}
